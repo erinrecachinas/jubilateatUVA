@@ -1,0 +1,187 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+*{
+    -webkit-font-smoothing:antialiased;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
+}
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    background:url(http://subtlepatterns.com/patterns/wavegrid.png);
+}
+.header{
+    width:100%;
+    background:#f8f8ff;
+    float:left;
+    text-align:center;
+    font-family:'Raleway';
+    font-weight:200;
+    line-height:5em;
+}
+.wrap{
+    position:relative;
+    margin:0 auto;
+    width:100%;
+}
+h1{
+    font-size:2em;
+    font-family:'Raleway';
+    margin:0;
+    display:inline;
+    float:left;
+    padding:20px;
+    padding-bottom:0;
+}
+h1 a{
+    color:#999;
+}
+h2{
+    font-size:1em;
+    margin:0;
+    display:inline;
+    float:right;
+    padding:15px;
+}
+a{
+    text-decoration:none;
+    -webkit-transition:color 0.5s;
+    -moz-transition:color 0.5s;
+    -o-transition:color 0.5s;
+    transition:color 0.5s;
+    color:blue;
+}
+a:hover{
+    color:black;
+}
+#navbar{
+    display:inline-block;
+    position:absolute;
+    width:115px;
+    list-style-type:none;
+    font-family:"Raleway";
+    font-weight:200;
+    padding-left:2%;
+    top:130px;
+}
+#navbar li{
+    padding-bottom:10px;
+}
+#navbar a{
+    text-decoration:none;
+    display:block;
+    color:black;
+    font-size:1.2em;
+    -webkit-transition:color 0.5s;
+    -moz-transition:color 0.5s;
+    -o-transition:color 0.5;
+    transition:color 0.5s;
+
+    
+}
+#navbar a:after{
+    clear:both;
+    display:block;
+    content: "";
+    position:relative;
+    width:0;
+    //left:50%;
+    height:3px;
+    background: rgb(59,109,197);
+    -webkit-transition:width 0.5s, left 0.5s;
+    -moz-transition:width 0.5s, left 0.5s;
+    -o-transition:width 0.5s, left 0.5;
+    transition:width 0.5s, left 0.5s;
+}
+#navbar a:hover:after, #navbar a:focus:after{
+    width:100%;
+    left:0;
+}
+#navbar a:hover{
+    color:rgb(59,109,197);
+}
+.content{
+    display:inline-block;
+    width:60%;
+    height:550px;
+    left:240px;
+    top:20px; 
+    box-shadow:0 1px 5px;
+    position:relative;
+    background:#f8f8ff;
+}
+
+.twitter-timeline{
+    position:relative;
+}
+
+.share-wrapper {
+  margin-right:5%;
+  margin-top:-4px;
+  position: relative;
+  float:right;
+}
+.share-general-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.share-general-link.active {
+  display: none;
+}
+.share-list {
+  list-style: none;
+  visibility: hidden;
+}
+.share-list.active {
+  visibility: visible;
+  max-width: 10em;
+}
+.share-list.active .share-item {
+  visibility: visible;
+  margin-right: 0;
+}
+.share-item {
+  display: inline-block;
+  margin-right: -35px;
+  transition: all 0.2s ease-out;
+}
+
+
+footer{
+    clear: both;
+    position:absolute;
+    bottom:0;
+    z-index:10;
+    height:5em;
+    margin-top:-2em;
+    width:100%;
+    float:left;
+    padding:15px 15px;
+    background:#777;
+    font-family:"Raleway";
+    font-style:bold;
+    color:white;
+
+}
+

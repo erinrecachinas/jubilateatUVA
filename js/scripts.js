@@ -1,0 +1,11 @@
+$(document).ready(function() {
+    $sharelink = $('.share-general-link');
+
+$sharelink.click(function() {
+    var $menu = $(this),
+      $sharelist = $(this).siblings('.share-list');
+  
+  $menu.toggleClass('active');
+  $sharelist.toggleClass('active');
+  return false;
+});});
